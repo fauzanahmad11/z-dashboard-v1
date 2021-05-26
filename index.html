@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="assets/css/layout.css">
+    <link rel="stylesheet" href="assets/css/all.min.css">
+</head>
+
+<body>
+    <div class="wrap-all">
+        <!-- Start Navbar -->
+        <nav class="navbar">
+            <div class="navbar-content head">
+                <div class="logo-brand">
+                    <img src="assets/img/icon/logo.svg" alt="">
+                </div>
+                <div class="title">
+                    <h2>Design</h2>
+                </div>
+                <div class="btn-toggle-navbar">
+                    <a href="#">
+                        <i class="fas fa-bars fa-2x"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="navbar-content body">
+                <h5 class="head">Main</h5>
+                <ul class="navbar-nav">
+                    <li class="navbar-items">
+                        <a href="index.html" class="navbar-link active">
+                            <span class="icon"><i class="fas fa-tachometer-alt"></i></span>
+                            <span class="title">Dashboard</span>
+                        </a>
+                    </li>
+                    <li class="navbar-items">
+                        <a href="#" class="navbar-link head-list">
+                            <span class="icon"><i class="fas fa-user-tie"></i></span>
+                            <span class="title">Petugas</span>
+                        </a>
+                        <ul class="navbar-list">
+                            <li class="list-item">
+                                <a href="pages/petugas/addNew_petugas.html" class="list-link"><span>Tambah
+                                        Petugas</span></a>
+                            </li>
+                            <li class="list-item">
+                                <a href="#" class="list-link"><span>Data Petugas</span></a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="navbar-items">
+                        <a href="#" class="navbar-link head-list">
+                            <span class="icon"><i class="fas fa-user"></i></span>
+                            <span class="title">Anggota</span>
+                        </a>
+                        <ul class="navbar-list">
+                            <li class="list-item">
+                                <a href="#" class="list-link"><span>Tambah Anggota</span></a>
+                            </li>
+                            <li class="list-item">
+                                <a href="#" class="list-link"><span>Data Anggota</span></a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="navbar-items">
+                        <a href="#" class="navbar-link head-list">
+                            <span class="icon"><i class="fas fa-balance-scale"></i></span>
+                            <span class="title">transkasi</span>
+                        </a>
+                        <ul class="navbar-list">
+                            <li class="list-item">
+                                <a href="#" class="list-link"><span>Tambah Petugas</span></a>
+                            </li>
+                            <li class="list-item">
+                                <a href="#" class="list-link"><span>Data Petugas</span></a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="navbar-items">
+                        <a href="#" class="navbar-link head-list">
+                            <span class="icon"><i class="fas fa-database"></i></span>
+                            <span class="title">data</span>
+                        </a>
+                        <ul class="navbar-list">
+                            <li class="list-item">
+                                <a href="#" class="list-link"><span>Tambah Petugas</span></a>
+                            </li>
+                            <li class="list-item">
+                                <a href="#" class="list-link"><span>Data Petugas</span></a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <h5 class="head" style="margin-top: 0px;">Help</h5>
+                <ul class="navbar-nav">
+                    <li class="navbar-items">
+                        <a href="index.html" class="navbar-link">
+                            <span class="icon"><i class="fas fa-cog"></i></span>
+                            <span class="title">settings</span>
+                        </a>
+                    </li>
+                    <li class="navbar-items">
+                        <a href="index.html" class="navbar-link">
+                            <span class="icon"><i class="fas fa-history"></i></span>
+                            <span class="title">riwayat</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="navbar-content footer">
+                <small>alright reserved by <span>ZanWorld</span> &copy; 2020 </small>
+            </div>
+        </nav>
+        <!-- #END Navbar -->
+        <section class="content">
+
+            <!-- Start Head Content -->
+            <header class="content-header">
+                <div class="content-title">
+                    <h2>Dashboard</h3>
+                </div>
+                <div class="user-dropdown">
+                    <a href="#" class="dropdown-toggle">
+                        <h4 class="user-name">Fauzan Ahmad</h4>
+                    </a>
+                    <div class="dropdown-menu">
+                        <ul class="dropdown-item">
+                            <li class="list-menu">
+                                <a href="#" class="link-menu">
+                                    <span class="icon"><i class="fas fa-user-alt"></i></span>
+                                    <span class="title">Profil</span>
+                                </a>
+                            </li>
+                            <li class="list-menu">
+                                <a href="#" class="link-menu">
+                                    <span class="icon"><i class="fas fa-user-cog"></i></span>
+                                    <span class="title">Pengaturan Akun</span>
+                                </a>
+                            </li>
+                            <li class="list-menu">
+                                <a href="#" class="link-menu">
+                                    <span class="icon"><i class="fas fa-sign-out-alt"></i></span>
+                                    <span class="title">Keluar</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </header>
+            <!-- #END Head Content -->
+            <!-- Start Body Content -->
+            <div class="content-body">
+                <div class="container">
+
+                    <!-- Start Counter -->
+                    <div class="counter">
+                        <div class="counter-items">
+                            <a href="#" class="link-items">
+                                <div class="head">
+                                    <span class="icon"><i class="fas fa-users fa-4x"></i></span>
+                                    <h1>300</h1>
+                                </div>
+                                <div class="title">
+                                    <h5>Anggota Koperasi</h5>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="counter-items">
+                            <a href="#" class="link-items">
+                                <div class="head">
+                                    <span class="icon"><i class="fas fa-user-friends fa-4x"></i></span>
+                                    <h1>300</h1>
+                                </div>
+                                <div class="title">
+                                    <h5>Petugas Koperasi</h5>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="counter-items">
+                            <a href="#" class="link-items">
+                                <div class="head">
+                                    <span class="icon"><i class="fas fa-wallet fa-4x"></i></span>
+                                    <h1>300</h1>
+                                </div>
+                                <div class="title">
+                                    <h5>Transaksi Simpanan</h5>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="counter-items">
+                            <a href="#" class="link-items">
+                                <div class="head">
+                                    <span class="icon"><i class="fas fa-hand-holding-usd fa-4x"></i></span>
+                                    <h1>300</h1>
+                                </div>
+                                <div class="title">
+                                    <h5>Transaksi Pinjaman</h5>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- #END Counter -->
+
+                    <!-- Start Table View -->
+                    <div class="data-view">
+                        <div class="table">
+                            <div class="table-head">
+                                <h1>Pinjaman</h1>
+                                <a href="#" class="link" title="data pinjaman">See all</a>
+                            </div>
+                            <div class="table-body">
+                                <div class="search-form">
+                                    <input type="text" name="search" id="search" placeholder="Tap to Search">
+                                </div>
+                                <table class="tb_secondary">
+                                    <thead>
+                                        <tr>
+                                            <th>NO</th>
+                                            <th>NAMA</th>
+                                            <th>AKSI</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th>1</th>
+                                            <td>Fauzan Ahmad</td>
+                                            <td>
+                                                <a href="#">
+                                                    <img src="assets/img/icon/icon-detail.svg" class="icon"
+                                                        alt="icon-detail">
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>2</th>
+                                            <td>Fauzan Ahmad</td>
+
+                                            <td>
+                                                <a href="#">
+                                                    <img src="assets/img/icon/icon-detail.svg" class="icon"
+                                                        alt="icon-detail">
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>3</th>
+                                            <td>Fauzan Ahmad</td>
+
+                                            <td>
+                                                <a href="#">
+                                                    <img src="assets/img/icon/icon-detail.svg" class="icon"
+                                                        alt="icon-detail">
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>4</th>
+                                            <td>Fauzan Ahmad</td>
+
+                                            <td>
+                                                <a href="#">
+                                                    <img src="assets/img/icon/icon-detail.svg" class="icon"
+                                                        alt="icon-detail">
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>5</th>
+                                            <td>Fauzan Ahmad</td>
+
+                                            <td>
+                                                <a href="#">
+                                                    <img src="assets/img/icon/icon-detail.svg" class="icon"
+                                                        alt="icon-detail">
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>6</th>
+                                            <td>Fauzan Ahmad</td>
+
+                                            <td>
+                                                <a href="#">
+                                                    <img src="assets/img/icon/icon-detail.svg" class="icon"
+                                                        alt="icon-detail">
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>7</th>
+                                            <td>Fauzan Ahmad</td>
+
+                                            <td>
+                                                <a href="#">
+                                                    <img src="assets/img/icon/icon-detail.svg" class="icon"
+                                                        alt="icon-detail">
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>8</th>
+                                            <td>Fauzan Ahmad</td>
+
+                                            <td>
+                                                <a href="#">
+                                                    <img src="assets/img/icon/icon-detail.svg" class="icon"
+                                                        alt="icon-detail">
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>9</th>
+                                            <td>Fauzan Ahmad</td>
+
+                                            <td>
+                                                <a href="#">
+                                                    <img src="assets/img/icon/icon-detail.svg" class="icon"
+                                                        alt="icon-detail">
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>10</th>
+                                            <td>Fauzan Ahmad</td>
+
+                                            <td>
+                                                <a href="#">
+                                                    <img src="assets/img/icon/icon-detail.svg" class="icon"
+                                                        alt="icon-detail">
+                                                </a>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="table">
+                            <div class="table-head">
+                                <h1>Simpanan</h1>
+                                <a href="#" class="link" title="data simpanan">See all</a>
+                            </div>
+                            <div class="table-body">
+                                <div class="search-form">
+                                    <input type="text" name="search" id="search" placeholder="Tap to Search">
+                                </div>
+                                <table class="tb_secondary">
+                                    <thead>
+                                        <tr>
+                                            <th>NO</th>
+                                            <th>NAMA</th>
+                                            <th>AKSI</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th>1</th>
+                                            <td>Fauzan Ahmad</td>
+                                            <td>
+                                                <a href="#">
+                                                    <img src="assets/img/icon/icon-detail.svg" class="icon"
+                                                        alt="icon-detail">
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>2</th>
+                                            <td>Fauzan Ahmad</td>
+                                            <td>
+                                                <a href="#">
+                                                    <img src="assets/img/icon/icon-detail.svg" class="icon"
+                                                        alt="icon-detail">
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>3</th>
+                                            <td>Fauzan Ahmad</td>
+
+                                            <td>
+                                                <a href="#">
+                                                    <img src="assets/img/icon/icon-detail.svg" class="icon"
+                                                        alt="icon-detail">
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>4</th>
+                                            <td>Fauzan Ahmad</td>
+
+                                            <td>
+                                                <a href="#">
+                                                    <img src="assets/img/icon/icon-detail.svg" class="icon"
+                                                        alt="icon-detail">
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>5</th>
+                                            <td>Fauzan Ahmad</td>
+
+                                            <td>
+                                                <a href="#">
+                                                    <img src="assets/img/icon/icon-detail.svg" class="icon"
+                                                        alt="icon-detail">
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>6</th>
+                                            <td>Fauzan Ahmad</td>
+
+                                            <td>
+                                                <a href="#">
+                                                    <img src="assets/img/icon/icon-detail.svg" class="icon"
+                                                        alt="icon-detail">
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>7</th>
+                                            <td>Fauzan Ahmad</td>
+
+                                            <td>
+                                                <a href="#">
+                                                    <img src="assets/img/icon/icon-detail.svg" class="icon"
+                                                        alt="icon-detail">
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>8</th>
+                                            <td>Fauzan Ahmad</td>
+
+                                            <td>
+                                                <a href="#">
+                                                    <img src="assets/img/icon/icon-detail.svg" class="icon"
+                                                        alt="icon-detail">
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>9</th>
+                                            <td>Fauzan Ahmad</td>
+
+                                            <td>
+                                                <a href="#">
+                                                    <img src="assets/img/icon/icon-detail.svg" class="icon"
+                                                        alt="icon-detail">
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>10</th>
+                                            <td>Fauzan Ahmad</td>
+
+                                            <td>
+                                                <a href="#">
+                                                    <img src="assets/img/icon/icon-detail.svg" class="icon"
+                                                        alt="icon-detail">
+                                                </a>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- #END Table View -->
+                </div>
+            </div>
+            <!-- #END Body Content -->
+        </section>
+    </div>
+
+    <script src="assets/js/all.min.js"></script>
+    <script src="assets/js/layout.js"></script>
+</body>
+
+</html>

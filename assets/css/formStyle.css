@@ -1,0 +1,462 @@
+/* =================form-content==================== */
+/* .content-body .single-form {
+    margin-top: 42px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+    grid-auto-rows: auto;
+    grid-gap: 14px;
+} */
+
+.content-body .single-form {
+    margin-top: 12px;
+    display: flex;
+
+}
+
+.content-body .form {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .3);
+    flex-grow: 12;
+}
+
+.single-form .form-head {
+    border-bottom: 1px solid #F5F5F5;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.single-form .form-head h1 {
+    font-family: "robotobold";
+    font-size: 17px;
+    color: var(--primary-text);
+    text-transform: capitalize;
+}
+
+.single-form .form-head a.link {
+    font-family: "robotomedium";
+    font-size: 14px;
+    color: var(--heading-link-text);
+    text-decoration: none;
+}
+
+.single-form .form-head a.link:hover {
+    color: var(--sidebar-active);
+}
+
+.single-form .form-body {
+    padding: 20px;
+}
+
+.single-form .form-group {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    margin: 18px 0;
+}
+
+.form-group .form-label {
+    font-family: "robotomedium";
+    font-size: 13px;
+    text-transform: capitalize;
+    color: var(--form-label);
+    margin-bottom: 4px;
+}
+
+/* ========================input style======================== */
+.form-group .form-control[type="text"],
+.form-group .form-control[type="date"],
+.form-group .form-control[type="password"] {
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid rgb(199, 199, 199);
+    padding: 0 10px;
+    background-color: var(--bg-form-input);
+    color: var(--cl-form-input);
+    font-family: "robotoregular";
+}
+
+.form-group .form-control.failed[type="text"],
+.form-group .form-control.failed[type="date"],
+.form-group .form-control.failed[type="password"] {
+    border-radius: 5px;
+    border: 1px solid rgb(255, 0, 0);
+}
+
+.form-group .form-caption {
+    color: var(--form-label);
+    font-size: 11px;
+    text-transform: capitalize;
+    font-family: "robotolight";
+}
+
+.form-group .form-caption.active {
+    color: var(--form-label);
+    font-size: 11px;
+    text-transform: capitalize;
+    font-family: "robotolight_italic";
+}
+
+.form-group .form-control[type="text"]:focus,
+.form-group .form-control[type="date"]:focus {
+    border-radius: 5px;
+    border: 1px solid var(--icon-color);
+    outline: none;
+    background-color: #fff;
+    color: var(--primary-text);
+    box-shadow: 0 1px 5px rgba(0, 0, 0, .3);
+}
+
+/* ===========Radio Button Style ================= */
+/* Pembungkus */
+.form-group .radio-control .box {
+    display: inline-block;
+    position: relative;
+    padding-left: 25px;
+    cursor: pointer;
+    font-size: 13px;
+    font-family: "robotoregular";
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* sembunyikan default radio button */
+.radio-control .btn-radio input {
+    position: absolute;
+    background-color: blue;
+    opacity: 0;
+    cursor: pointer;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+/* bikin radio button custom */
+.radio-control .btn-radio .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #eee;
+    border-radius: 50%;
+}
+
+/* ketika mouse hover berikan background grey */
+.radio-control .btn-radio:hover input~.checkmark {
+    background-color: #cccccc;
+}
+
+/* ketika radio telah di tekan/checked add bg primary text */
+.radio-control .btn-radio input:checked~.checkmark {
+    background-color: var(--primary-text);
+}
+
+/* bikin indikator dot bulat tengah hidden when not clicked */
+.radio-control .btn-radio .checkmark::after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* tampilkan indikator ketika diclick */
+.radio-control .btn-radio input:checked~.checkmark::after {
+    display: block;
+}
+
+/* berikan hiasan pada indikator */
+.radio-control .btn-radio .checkmark::after {
+    top: 4px;
+    left: 4px;
+    width: 12px;
+    height: 12px;
+    background: var(--icon-color);
+    border-radius: 50%;
+}
+
+/*==================== textarea style==================== */
+.form-group textarea.form-control {
+    height: 100px;
+    border-radius: 5px;
+    border: 1px solid rgb(199, 199, 199);
+    padding: 3px 10px;
+    background-color: var(--bg-form-input);
+    color: var(--cl-form-input);
+    font-family: "robotoregular";
+    resize: none;
+}
+
+.form-group textarea.form-control:focus {
+    border-radius: 5px;
+    border: 1px solid var(--icon-color);
+    outline: none;
+    background-color: #fff;
+    color: var(--primary-text);
+    box-shadow: 0 1px 5px rgba(0, 0, 0, .3);
+}
+
+/*==================== select style==================== */
+.form-group select.form-control {
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid rgb(199, 199, 199);
+    padding: 3px 10px;
+    background-color: var(--bg-form-input);
+    color: var(--cl-form-input);
+    font-family: "robotoregular";
+    resize: none;
+}
+
+.form-group select.form-control:focus {
+    border-radius: 5px;
+    border: 1px solid var(--icon-color);
+    outline: none;
+    background-color: #fff;
+    color: var(--primary-text);
+    box-shadow: 0 1px 5px rgba(0, 0, 0, .3);
+}
+
+/* ================= button style =================== */
+.btn-group {
+    text-align: center;
+    margin: 25px;
+}
+
+.btn {
+    border: none;
+    font-family: "robotomedium";
+    font-size: 13px;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    cursor: pointer;
+    box-shadow: inset 0 0 40px rgba(255, 255, 255, 0.1);
+}
+
+.btn.btn-md {
+    width: 100px;
+    padding: 5px;
+}
+
+.btn.btn-submit {
+    background-color: var(--btn-submit);
+}
+
+.btn.btn-reset {
+    background-color: var(--btn-reset);
+}
+
+/* ============================== tb-primary ============================ */
+.table .table-body .tb_primary {
+    width: 100%;
+    text-align: center;
+}
+
+.tb_primary thead tr {
+    color: var(--primary-text);
+    font-size: 13px;
+    font-family: "robotobold";
+}
+
+.tb_primary tbody tr {
+    color: var(--primary-text);
+    font-size: 13px;
+    font-family: "robotoregular";
+}
+
+.tb_primary td {
+    padding: 8px 0;
+    text-transform: capitalize;
+}
+
+/* =============== icon style ================== */
+a.icon {
+    text-decoration: none;
+}
+
+a.icon.icon-detail img {
+    background-color: var(--btn-detail);
+    border-radius: 50%;
+    padding: 1px;
+}
+
+a.icon.icon-update img {
+    background-color: var(--btn-update);
+    border-radius: 50%;
+    padding: 1px;
+}
+
+a.icon.icon-delete img {
+    background-color: var(--btn-delete);
+    border-radius: 50%;
+    padding: 1px;
+}
+
+/* ==========================Pagination Style========================== */
+nav ul.pagination {
+    margin: 20px 0;
+    list-style: none;
+    display: flex;
+    max-width: auto;
+    justify-content: center;
+}
+
+ul.pagination li.page-item:nth-child(1).active a {
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+    font-family: "robotobold";
+    color: var(--sidebar-active);
+    background-color: none;
+}
+
+ul.pagination li.page-item.active:nth-last-child(1) .page-link {
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    font-family: "robotobold";
+    color: var(--sidebar-active);
+}
+
+ul.pagination li.page-item.disabled:nth-child(1) .page-link {
+    background-color: #DDDFE3;
+    font-family: "robotoregular";
+    color: var(--secondary-text);
+}
+
+ul.pagination li.page-item.disabled:nth-last-child(1) .page-link {
+    background-color: #DDDFE3;
+    font-family: "robotoregular";
+    color: var(--secondary-text);
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+ul.pagination li.page-item.active span.page-link {
+    background-color: var(--sidebar-active);
+    font-family: "robotobold";
+    border: 1px solid var(--sidebar-active);
+    color: #fff;
+    transform: scale(1.05);
+    box-shadow: inset 0 0 15px rgba(0, 0, 0, .3);
+    border-radius: 3px;
+}
+
+ul.pagination li.page-item .page-link {
+    border: 1px solid #c4c4c4;
+    text-decoration: none;
+    font-size: 14px;
+    font-family: "robotomedium";
+    color: var(--secondary-text);
+    padding: 5px 10px;
+    display: inline-block;
+}
+
+
+/* ==============color============== */
+:root {
+    --form-label: #6E717E;
+    --bg-form-input: #eee;
+    --cl-form-input: #6E717E;
+    /* Sidebar-BG */
+    --sidebar-bgc: #5D44F8;
+    /* Active-link Sidebar */
+    --sidebar-active: #4731D3;
+    /* Icon */
+    --icon-color: #F7BD4B;
+    /* Heading Content */
+    --heading-link-text: #6E58F8;
+    /* BG CONTENT */
+    --content-bgc: #F5F6F7;
+    /* primary text */
+    --primary-text: #2D3145;
+    /* secondary text */
+    --secondary-text: #6E717E;
+    /* btn reset */
+    --btn-reset: #EF5350;
+    /* btn submit */
+    --btn-submit: #F7BD4B;
+    /* icon-detail */
+    --btn-detail: #6A53F8;
+    /* icon-update */
+    --btn-update: #61CC7E;
+    /* icon-delete */
+    --btn-delete: #EF5350;
+}
+
+/* ==============================FONTS============================== */
+
+@font-face {
+    font-family: 'dancing_regular';
+    src: url(../fonts/dancingscript-variablefont_wght-webfont.woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'robotoblack';
+    src: url(../fonts/Roboto-Black.ttf) format('ttf');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'robotomedium';
+    src: url(./../fonts/roboto-medium-webfont.woff2) format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'robotoblack';
+    src: url(./../fonts/roboto-black-webfont.woff2) format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'robotobold';
+    src: url(../fonts/roboto-bold-webfont.woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'robotobold_italic';
+    src: url(../fonts/roboto-bolditalic-webfont.woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'robotolight';
+    src: url(../fonts/roboto-light-webfont.woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'robotolight_italic';
+    src: url(../fonts/roboto-lightitalic-webfont.woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'robotoregular';
+    src: url(../fonts/roboto-regular-webfont.woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
